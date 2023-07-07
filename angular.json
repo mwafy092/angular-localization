@@ -5,6 +5,12 @@
   "projects": {
     "localization-app": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "ar": "./translate/messages.ar.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -28,7 +34,18 @@
             "scripts": []
           },
           "configurations": {
+            "ar": {
+              "localize": ["ar"],
+              "aot": true
+            },
+            "en": {
+              "localize": ["en"],
+              "aot": true
+            },
             "production": {
+              "localize": true,
+              "aot": true,
+              "i18nMissingTranslation": "error",
               "budgets": [
                 {
                   "type": "initial",
