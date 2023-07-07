@@ -6,6 +6,8 @@
     "start": "ng serve",
     "start-ar": "ng serve --configuration=ar",
     "start-en": "ng serve --configuration=en",
+    "build-locale:en": "ng build",
+    "build-locale:ar": "ng build  --i18n-locale ar --i18n-format xlf --i18n-file translate/messages.ar.xlf --output-path=dist/ar --baseHref /ar/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

@@ -8,3 +8,4 @@
 4. make copy for every language and add target tag for translation
 5. check angular.json for all configuration need to build and serve the app
 6. check package.json for running both ar and en builds
+7. run npm run build to build all translated versions with base url
