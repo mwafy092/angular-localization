@@ -2,4 +2,9 @@
   <h1 i18n>Hello, world</h1>
   <p i18n>This is a dummy app just for testing i18n</p>
   <p i18n="@@username">Created by mustafa mwafy</p>
+  <ng-container *ngFor="let language of languageList">
+    <a [href]="'/' + language.code + '/'">
+      <button>{{language.label}}</button>
+    </a>
+  </ng-container>
 </div>
